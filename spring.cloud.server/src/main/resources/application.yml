@@ -1,0 +1,15 @@
+spring:
+  cloud:
+    consul:
+      host: 192.168.1.152
+      port: 8500
+      discovery:
+        enabled: true
+        instance-id: app-test
+        service-name: app-test
+        hostname: 192.168.1.214
+        port: 2222
+  application:
+    name: app-test
+server:
+  port: 3333
